@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using PersonalSite.Domain.Entities;
 using PersonalSite.Domain.Abstract;
+using PersonalSite.WebUI.Models;
 
 namespace PersonalSite.WebUI.Controllers
 {
@@ -19,7 +20,11 @@ namespace PersonalSite.WebUI.Controllers
 
         public ViewResult BlogList()
         {
-            return View();
+            PostListViewModel model = new PostListViewModel
+            {
+                Posts = repository.Posts
+            };
+            return View(model);
         }
     }
 }
