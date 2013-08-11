@@ -4,7 +4,7 @@ using PersonalSite.Domain.Abstract;
 
 namespace PersonalSite.Domain.Concrete
 {
-    class EFPostsRepository : IPostRepository
+    public class EFPostsRepository : IPostRepository
     {
         private EFDbContext context = new EFDbContext();
 
