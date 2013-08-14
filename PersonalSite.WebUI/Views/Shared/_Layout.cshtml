@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/less/bootstrap.less" rel="stylesheet" />
+    <link href="~/Content/less/responsive.less" rel="stylesheet" />
+    <style type="text/css" >
+          body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+          }
+     </style>
+</head>
+<body>
+    <div id="header">
+        <div class="title">Website!!</div>
+        <div class="author">Nick Hunter</div>
+    </div>
+    <div id="navigation">
+        <div class="nav_category">Blog</div>
+    </div>
+    <div id="container">
+        @RenderSection("featured", required: false)
+    </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
