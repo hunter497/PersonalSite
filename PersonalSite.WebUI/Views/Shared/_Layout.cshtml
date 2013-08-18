@@ -7,21 +7,20 @@
     <title>@ViewBag.Title</title>
     <link href="~/Content/less/bootstrap.less" rel="stylesheet" />
     <link href="~/Content/less/responsive.less" rel="stylesheet" />
+    <link href="~/Content/css/basic.css" rel="stylesheet" />
     <style type="text/css" >
           body {
-            padding-top: 60px;
+            text-align: center;
+            padding-top: 20px;
             padding-bottom: 40px;
           }
      </style>
 </head>
 <body>
-    <div id="header">
-        <div class="title">Website!!</div>
-        <div class="author">Nick Hunter</div>
-    </div>
-    <div id="navigation">
-        <div class="nav_category">Blog</div>
-    </div>
+    <div class="title">The Musings of a Geek</div>
+
+    @Html.Partial("_NavBar")
+
     <div id="container">
         @RenderSection("featured", required: false)
     </div>
