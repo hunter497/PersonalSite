@@ -10,8 +10,8 @@
     margin: 0 auto;
 }
 
-.navbar .nav,
-.navbar .nav > li {
+.center.navbar .nav,
+.center.navbar .nav > li {
   float:none;
   display:inline-block;
   *display:inline; /* ie7 fix */
@@ -19,6 +19,6 @@
   vertical-align: top;
 }
 
-.navbar-inner {
+.center.navbar-inner {
   text-align:center;
 }
